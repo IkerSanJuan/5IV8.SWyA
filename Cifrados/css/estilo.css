@@ -1,0 +1,15 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url("fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.ba{
+    background-color: white;
+}

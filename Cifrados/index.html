@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrados</title>
+    <link rel="icon" href="img/icono.png">
+    <link href="https://bootswatch.com/5/darkly/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-image: url("img/fondo.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+    </style>
+<body>
+        <audio autoplay><source src="img/gatitos.mp3" type="audio/mp3"></audio>
+        <div id="inicio">
+            <div class="col-md-5 offset-md-3 card">
+                <br>
+                <br>
+                <h1><center>CIFRADOS CÉSAR Y  VIGGENERE</center></h1>
+                <h2><center>POR: SAN JUAN ROA IKER DE JESHUA</center></h2>
+                <br>
+                <table style="margin: 0 auto;">
+                    <tr>
+                        <center><h3><a href="#cesar">Ir a Cesar</a></h3></center>
+                    </tr>
+                    <tr>
+                        <center><h3><a href="#vig">Ir aViggenere</a></h3></center>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <img src="img/descargar.jpg">
+                    <br>
+                    <center>Gato morido wiiiiiiiiiiiiiii *w*</center>
+                </table>
+                <br>
+                <br>
+            </div>
+                <br>
+                <br>
+            <div class="col-md-5 offset-md-3 card" style="text-align:center;">
+                <table>
+                    <tr>
+                        <br>
+                        <br>
+                        <div id="cesar">
+                            <h2><center>CIFRADO CÉSAR</center></h2>
+                            <p><center>Ingrese el mensaje a cifrar o descifrar:</center></p>
+                            <center><textarea id="ctext" rows="3" cols="40" class="txtarea"></textarea></center>
+                            <br>
+                            <br>
+                            <table style="margin: 0 auto;">
+                                <td>
+                                    <center><input class="btn btn-info" type="button"  value="CIFRAR" onclick="ccifrar()"></center>
+                                </td>
+                                <td>
+                                    <center><input type="button"  value="DESCIFRAR" onclick="cdescifrar()" class="btn btn-primary"></center>
+                                </td>
+                            </table>
+                            <br>
+                            <br>
+                            <center><textarea id="cresul" readonly rows="3" cols="40" class="txtarea"></textarea></center>
+                            <br>
+                            <table style="margin: 0 auto;">
+                                <td>
+                                    <center><a href="#inicio"><input class="btn btn-danger" type="button"  value="Volver"></a></center>
+                                </td>
+                            </table>
+                            <br>
+                            <table>
+                                <img src="img/Gatocabron_foro.jpg">
+                                <br>
+                                <center>Gato tactico piupiu *w*</center>
+                            </table>
+                            <br>
+                        </div>
+                        
+                    </tr>
+                    <tr>
+                        <br>
+                        <br>
+                        <div class="col-md-5 offset-md-3 card" id="vig">
+                            <br>
+                            <br>
+                            <h2><center>CIFRADO VIGGENERE</center></h2>
+                            <p><center>Ingrese el mensaje a cifrar o descifrar:</center></p>
+                            <center><textarea id="vtext" rows="3" cols="40" class="txtarea"></textarea></center>
+                            <p><center>Ingrese la llave:</center></p>
+                            <center><textarea id="llave" rows="2" cols="40" class="txtarea"></textarea></center>
+                            <br>
+                            <br>
+                            <table style="margin: 0 auto;">
+                                <td>
+                                    <center><input type="button"  value="CIFRAR" onclick="RebuildString(Encriptar(true))" class="btn btn-info"></center>
+                                </td>
+                                <td>
+                                    <center><input type="button"  value="DESCIFRAR" onclick="RebuildString(Encriptar(false))" class="btn btn-primary"></center>
+                                </td>
+                            </table>
+                            <br>
+                            <br>
+                            <center><textarea id="vresul" readonly rows="3" cols="40" class="txtarea"></textarea></center>
+                            <br>
+                            <table style="margin: 0 auto;">
+                                <td>
+                                    <center><a href="#inicio"><input class="btn btn-danger" type="button"  value="Volver"></a></center>
+                                </td>
+                            </table>
+                            <br>
+                            <table>
+                                <img src="img/4-gato-dormido-apoyado-en-la-pared.jpg">
+                                <br>
+                                <center>Gato mimido zzzzzzz *w*</center>
+                                <br>
+                                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/MrSmvk0Ojm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+                            </table>
+                            <br>
+                            <br>
+                        </div>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    
+    <script src="js/logica.js"></script>
+</body>
+</html>
