@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado DES</title>
+    <link rel="icon" href="img/icono.png">
+    <link href="https://bootswatch.com/5/darkly/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-image: url("img/fondo.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        .vis{
+            background-color: aliceblue;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/tripledes.js"></script>
+
+    <br>
+
+    <div class="col-md-5 offset-md-3 card">
+
+        <div class="input-group-prepend" style="margin-top: 4%;">
+            <center><h1>Cifrado DES</h1></center>
+            <center><h2></h2>POR: SAN JUAN ROA IKER DE JESHUA</h2></center>
+            <br>
+            <table style="margin: 0 auto;">
+                    <input class="form-control" type="file" id="archivo" oninput="leer()">
+                    <br>
+                    <input class="form-control" type="password" placeholder="Clave" id="clave" maxlength="8" minlength="8">
+                <td>
+                    <input class="btn btn-info" type="button" value="Cifrar" onclick="cifrar()">
+                </td>
+                    <br>
+                <td>
+                    &nbsp;
+                    <input class="btn btn-primary" type="button" value="Descifrar" onclick="descifrar()">
+                </td>
+                    
+                    <p id="txt"></p>
+                    
+                    <div id="resultado"></div>
+            </table>
+            <br>
+            <center>El texto del archivo seleccionado es:</center>
+            <br>
+            <center><div class="vis" id="visualizar"></div></center>
+            <br>
+            <br>
+        </div>
+    <script src="js/logica.js"></script>
+
+</body>
+</html>
