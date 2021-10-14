@@ -75,7 +75,7 @@ function descargarArchivo(contBlob, nombreArchivo) {
     };
     reader.readAsDataURL(contBlob);
     alert("A continuación se descargara el archivo");
-  };
+};
 
 
 function generarTexto(datos) {
